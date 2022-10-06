@@ -27,7 +27,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNK-ss-4HJ">
-                        <rect key="frame" x="116" y="36.666666666666664" width="285" height="21"/>
+                        <rect key="frame" x="116" y="36.666666666666664" width="242" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,18 +35,24 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="APj-Ph-dQo">
+                        <rect key="frame" x="376" y="37" width="20" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="BNK-ss-4HJ" firstAttribute="leading" secondItem="Nj3-ld-6iv" secondAttribute="trailing" constant="18" id="5rJ-64-fNX"/>
+                    <constraint firstItem="APj-Ph-dQo" firstAttribute="leading" secondItem="BNK-ss-4HJ" secondAttribute="trailing" constant="18" id="FPs-Fw-eEu"/>
                     <constraint firstItem="Nj3-ld-6iv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="HTE-52-BAB"/>
                     <constraint firstAttribute="bottom" secondItem="Nj3-ld-6iv" secondAttribute="bottom" constant="3" id="HfW-35-UgW"/>
                     <constraint firstItem="Nj3-ld-6iv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Jls-zm-UQA"/>
-                    <constraint firstAttribute="trailing" secondItem="BNK-ss-4HJ" secondAttribute="trailing" constant="10" id="j0E-Kt-PSI"/>
+                    <constraint firstAttribute="trailing" secondItem="APj-Ph-dQo" secondAttribute="trailing" constant="15" id="bRX-FE-2Gk"/>
+                    <constraint firstItem="APj-Ph-dQo" firstAttribute="centerY" secondItem="BNK-ss-4HJ" secondAttribute="centerY" id="eXs-vY-TIF"/>
                     <constraint firstItem="BNK-ss-4HJ" firstAttribute="centerY" secondItem="Nj3-ld-6iv" secondAttribute="centerY" id="r74-Bf-yWW"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="activityIndicator" destination="APj-Ph-dQo" id="4cC-0w-SK7"/>
                 <outlet property="cityImageView" destination="Nj3-ld-6iv" id="REG-wr-eDq"/>
                 <outlet property="cityLabel" destination="BNK-ss-4HJ" id="acj-Re-1Se"/>
             </connections>

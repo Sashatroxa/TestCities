@@ -10,7 +10,7 @@ import UIKit
 protocol MainPresenterProtocol: AnyObject {
     func jsonStartedLoading(completion: @escaping ([MainModel])->())
     func searchBarTextDidChange(searchText: String, cities: [MainModel], completion: @escaping ([MainModel])->())
-    func tableCellPressed(lat: Double, lon: Double)
+    func tableCellPressed(lat: Double, lon: Double, completion: (()->())?)
 }
 
 final class MainPresenter {
@@ -42,7 +42,7 @@ extension MainPresenter: MainPresenterProtocol {
         completion(filteredCities)
     }
     
-    func tableCellPressed(lat: Double, lon: Double) {
+    func tableCellPressed(lat: Double, lon: Double, completion: (()->())?) {
         self.network.fetchDataCity(lat: lat, lon: lon, model: DescriptionModel.self) { [weak self] result in
             switch result {
             case .success(let data):
@@ -50,6 +50,7 @@ extension MainPresenter: MainPresenterProtocol {
                 detailController.modalPresentationStyle = .fullScreen
                 let presenter = DetailPresenter(view: detailController)
                 detailController.presenter = presenter
+                completion?()
                 
                 self?.view?.presentController(controller: detailController)
             case .failure(let error):

@@ -19,12 +19,12 @@
 		1F6DD8F528EC1D1F00A22180 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD8F428EC1D1F00A22180 /* JsonParser.swift */; };
 		1F6DD8F828EC1E8B00A22180 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1F6DD8F728EC1E8B00A22180 /* Alamofire */; };
 		1F6DD8FB28EC1EA000A22180 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 1F6DD8FA28EC1EA000A22180 /* SkeletonView */; };
-		1F6DD8FE28EC1F7900A22180 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 1F6DD8FD28EC1F7900A22180 /* Realm */; };
-		1F6DD90028EC1F7900A22180 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F6DD8FF28EC1F7900A22180 /* RealmSwift */; };
 		1F6DD90228EC238900A22180 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD90128EC238900A22180 /* AppError.swift */; };
 		1F89A91E28ED7EC4006A01D6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89A91D28ED7EC4006A01D6 /* ImageLoader.swift */; };
 		1FED3EE128EAF4FD00BAE1BC /* city_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FED3EE028EAF4FD00BAE1BC /* city_list.json */; };
 		1FED3EE328EAF68900BAE1BC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3EE228EAF68900BAE1BC /* MainPresenter.swift */; };
+		1FFD510A28EF2C3200D0B698 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD510828EF2C3200D0B698 /* DetailCell.swift */; };
+		1FFD510B28EF2C3200D0B698 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FFD510928EF2C3200D0B698 /* DetailCell.xib */; };
 		1FFE909128EAF0660069A49E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE909028EAF0660069A49E /* AppDelegate.swift */; };
 		1FFE909A28EAF0690069A49E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE909928EAF0690069A49E /* Assets.xcassets */; };
 		1FFE909D28EAF0690069A49E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE909B28EAF0690069A49E /* LaunchScreen.storyboard */; };
@@ -48,6 +48,8 @@
 		1F89A91D28ED7EC4006A01D6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		1FED3EE028EAF4FD00BAE1BC /* city_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city_list.json; sourceTree = "<group>"; };
 		1FED3EE228EAF68900BAE1BC /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		1FFD510828EF2C3200D0B698 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		1FFD510928EF2C3200D0B698 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		1FFE908D28EAF0660069A49E /* CitiesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitiesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFE909028EAF0660069A49E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FFE909928EAF0690069A49E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6DD90028EC1F7900A22180 /* RealmSwift in Frameworks */,
-				1F6DD8FE28EC1F7900A22180 /* Realm in Frameworks */,
 				1F6DD8FB28EC1EA000A22180 /* SkeletonView in Frameworks */,
 				1F6DD8F828EC1E8B00A22180 /* Alamofire in Frameworks */,
 				72F5EE303BB1A850248FD924 /* Pods_CitiesTest.framework in Frameworks */,
@@ -122,6 +122,8 @@
 		1F3D1B0C28EEDE2E00B9B631 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				1FFD510828EF2C3200D0B698 /* DetailCell.swift */,
+				1FFD510928EF2C3200D0B698 /* DetailCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -271,7 +273,6 @@
 				6E4420F183580D9A93790BAC /* Pods-CitiesTest.debug.xcconfig */,
 				6A9D7C6E726E068D83767F1A /* Pods-CitiesTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -304,8 +305,6 @@
 			packageProductDependencies = (
 				1F6DD8F728EC1E8B00A22180 /* Alamofire */,
 				1F6DD8FA28EC1EA000A22180 /* SkeletonView */,
-				1F6DD8FD28EC1F7900A22180 /* Realm */,
-				1F6DD8FF28EC1F7900A22180 /* RealmSwift */,
 			);
 			productName = CitiesTest;
 			productReference = 1FFE908D28EAF0660069A49E /* CitiesTest.app */;
@@ -336,9 +335,8 @@
 			);
 			mainGroup = 1FFE908428EAF0660069A49E;
 			packageReferences = (
-				1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
-				1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */,
-				1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift.git" */,
+				1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = 1FFE908E28EAF0660069A49E /* Products */;
 			projectDirPath = "";
@@ -358,6 +356,7 @@
 				1FFE909A28EAF0690069A49E /* Assets.xcassets in Resources */,
 				1FED3EE128EAF4FD00BAE1BC /* city_list.json in Resources */,
 				1FFE90AD28EAF2720069A49E /* MainController.xib in Resources */,
+				1FFD510B28EF2C3200D0B698 /* DetailCell.xib in Resources */,
 				1F3D1B0828EEDD8800B9B631 /* DetailController.xib in Resources */,
 				1F6DD8EC28EC195A00A22180 /* MainCell.xib in Resources */,
 			);
@@ -424,6 +423,7 @@
 				1F6DD8F028EC1BCD00A22180 /* MainModel.swift in Sources */,
 				1F3D1B0E28EEDE4E00B9B631 /* DetailPresenter.swift in Sources */,
 				1F6DD8F528EC1D1F00A22180 /* JsonParser.swift in Sources */,
+				1FFD510A28EF2C3200D0B698 /* DetailCell.swift in Sources */,
 				1FFE90AC28EAF2720069A49E /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,7 +638,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -646,7 +646,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */ = {
+		1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
 			requirement = {
@@ -654,36 +654,18 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		1F6DD8F728EC1E8B00A22180 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = 1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 		1F6DD8FA28EC1EA000A22180 /* SkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */;
+			package = 1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */;
 			productName = SkeletonView;
-		};
-		1F6DD8FD28EC1F7900A22180 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
-			productName = Realm;
-		};
-		1F6DD8FF28EC1F7900A22180 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
-			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

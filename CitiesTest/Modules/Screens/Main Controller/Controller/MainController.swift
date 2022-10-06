@@ -69,7 +69,14 @@ extension MainController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let latitude = filteredCities[indexPath.row].coord.lat
         let longitude = filteredCities[indexPath.row].coord.lon
-        self.presenter?.tableCellPressed(lat: latitude, lon: longitude)
+        
+        let indexPath = IndexPath(row: indexPath.row, section: indexPath.section)
+        let cell = tableView.cellForRow(at: indexPath) as! MainCell
+        cell.startAnimateIndicator()
+        
+        self.presenter?.tableCellPressed(lat: latitude, lon: longitude, completion: { [weak cell] in
+            cell?.stopAnimateIndicator()
+        })
     }
 }
 
@@ -119,7 +126,7 @@ extension MainController: UISearchBarDelegate {
 extension MainController: MainViewProtocol {
     func presentController(controller: UIViewController) {
         DispatchQueue.main.async {
-            self.present(controller, animated: true)
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     }
 }

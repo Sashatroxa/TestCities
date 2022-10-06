@@ -11,6 +11,7 @@ import SkeletonView
 final class MainCell: UITableViewCell {
     @IBOutlet weak private var cityImageView: ImageLoader!
     @IBOutlet weak private var cityLabel: UILabel!
+    @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,6 +45,14 @@ extension MainCell {
             self.cityImageView.hideSkeleton()
             self.cityLabel.hideSkeleton()
         }
+    }
+    
+    func startAnimateIndicator() {
+        self.activityIndicator.startAnimating()
+    }
+    
+    func stopAnimateIndicator() {
+        self.activityIndicator.stopAnimating()
     }
 }
 
