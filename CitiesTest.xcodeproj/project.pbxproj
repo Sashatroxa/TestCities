@@ -30,6 +30,7 @@
 		1FFE909D28EAF0690069A49E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE909B28EAF0690069A49E /* LaunchScreen.storyboard */; };
 		1FFE90AC28EAF2720069A49E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE90AA28EAF2720069A49E /* MainController.swift */; };
 		1FFE90AD28EAF2720069A49E /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE90AB28EAF2720069A49E /* MainController.xib */; };
+		72F5EE303BB1A850248FD924 /* Pods_CitiesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3185E8B3B0A3E8F94D4C4FA4 /* Pods_CitiesTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,9 @@
 		1FFE909E28EAF0690069A49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFE90AA28EAF2720069A49E /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		1FFE90AB28EAF2720069A49E /* MainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
+		3185E8B3B0A3E8F94D4C4FA4 /* Pods_CitiesTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CitiesTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9D7C6E726E068D83767F1A /* Pods-CitiesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitiesTest.release.xcconfig"; path = "Target Support Files/Pods-CitiesTest/Pods-CitiesTest.release.xcconfig"; sourceTree = "<group>"; };
+		6E4420F183580D9A93790BAC /* Pods-CitiesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitiesTest.debug.xcconfig"; path = "Target Support Files/Pods-CitiesTest/Pods-CitiesTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				1F6DD8FE28EC1F7900A22180 /* Realm in Frameworks */,
 				1F6DD8FB28EC1EA000A22180 /* SkeletonView in Frameworks */,
 				1F6DD8F828EC1E8B00A22180 /* Alamofire in Frameworks */,
+				72F5EE303BB1A850248FD924 /* Pods_CitiesTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +184,8 @@
 			children = (
 				1FFE908F28EAF0660069A49E /* CitiesTest */,
 				1FFE908E28EAF0660069A49E /* Products */,
+				87232A327DA92D44EC914C40 /* Pods */,
+				AC5C4C307879F0494BCF878B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,6 +265,24 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		87232A327DA92D44EC914C40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E4420F183580D9A93790BAC /* Pods-CitiesTest.debug.xcconfig */,
+				6A9D7C6E726E068D83767F1A /* Pods-CitiesTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC5C4C307879F0494BCF878B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3185E8B3B0A3E8F94D4C4FA4 /* Pods_CitiesTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FFE90A128EAF0690069A49E /* Build configuration list for PBXNativeTarget "CitiesTest" */;
 			buildPhases = (
+				7E5D0F583E4E93106AE13782 /* [CP] Check Pods Manifest.lock */,
 				1FFE908928EAF0660069A49E /* Sources */,
 				1FFE908A28EAF0660069A49E /* Frameworks */,
 				1FFE908B28EAF0660069A49E /* Resources */,
+				9EFEF6C63DAD86B5DD250EE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,9 +336,9 @@
 			);
 			mainGroup = 1FFE908428EAF0660069A49E;
 			packageReferences = (
-				1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */,
-				1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */,
+				1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift.git" */,
 			);
 			productRefGroup = 1FFE908E28EAF0660069A49E /* Products */;
 			projectDirPath = "";
@@ -337,6 +364,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E5D0F583E4E93106AE13782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CitiesTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EFEF6C63DAD86B5DD250EE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CitiesTest/Pods-CitiesTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CitiesTest/Pods-CitiesTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CitiesTest/Pods-CitiesTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FFE908928EAF0660069A49E /* Sources */ = {
@@ -489,6 +558,7 @@
 		};
 		1FFE90A228EAF0690069A49E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4420F183580D9A93790BAC /* Pods-CitiesTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,6 +587,7 @@
 		};
 		1FFE90A328EAF0690069A49E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9D7C6E726E068D83767F1A /* Pods-CitiesTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -567,7 +638,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -575,7 +646,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+		1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
 			requirement = {
@@ -583,7 +654,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -596,22 +667,22 @@
 /* Begin XCSwiftPackageProductDependency section */
 		1F6DD8F728EC1E8B00A22180 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 		1F6DD8FA28EC1EA000A22180 /* SkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			package = 1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */;
 			productName = SkeletonView;
 		};
 		1F6DD8FD28EC1F7900A22180 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = Realm;
 		};
 		1F6DD8FF28EC1F7900A22180 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 1F6DD8FC28EC1F7900A22180 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

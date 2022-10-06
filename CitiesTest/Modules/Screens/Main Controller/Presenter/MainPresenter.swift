@@ -46,7 +46,7 @@ extension MainPresenter: MainPresenterProtocol {
         self.network.fetchDataCity(lat: lat, lon: lon, model: DescriptionModel.self) { [weak self] result in
             switch result {
             case .success(let data):
-                let detailController = DetailController(cityData: [data])
+                let detailController = DetailController(cityData: data)
                 detailController.modalPresentationStyle = .fullScreen
                 let presenter = DetailPresenter(view: detailController)
                 detailController.presenter = presenter
