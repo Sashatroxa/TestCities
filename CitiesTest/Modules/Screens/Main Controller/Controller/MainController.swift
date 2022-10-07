@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MainViewProtocol: AnyObject {
-    func presentController(controller: UIViewController)
+    func pushToController(controller: UIViewController)
 }
 
 final class MainController: UIViewController {
@@ -124,7 +124,7 @@ extension MainController: UISearchBarDelegate {
 
 //MARK: - MainViewProtocol
 extension MainController: MainViewProtocol {
-    func presentController(controller: UIViewController) {
+    func pushToController(controller: UIViewController) {
         DispatchQueue.main.async {
             self.navigationController?.pushViewController(controller, animated: true)
         }

@@ -296,6 +296,7 @@
 				1FFE908A28EAF0660069A49E /* Frameworks */,
 				1FFE908B28EAF0660069A49E /* Resources */,
 				9EFEF6C63DAD86B5DD250EE7 /* [CP] Copy Pods Resources */,
+				22EF4AF5BF27571830A36440 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,8 +336,8 @@
 			);
 			mainGroup = 1FFE908428EAF0660069A49E;
 			packageReferences = (
-				1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */,
 			);
 			productRefGroup = 1FFE908E28EAF0660069A49E /* Products */;
 			projectDirPath = "";
@@ -365,6 +366,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		22EF4AF5BF27571830A36440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CitiesTest/Pods-CitiesTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CitiesTest/Pods-CitiesTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CitiesTest/Pods-CitiesTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7E5D0F583E4E93106AE13782 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,7 +656,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -646,7 +664,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+		1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
 			requirement = {
@@ -659,12 +677,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		1F6DD8F728EC1E8B00A22180 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 1F6DD8F628EC1E8B00A22180 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 		1F6DD8FA28EC1EA000A22180 /* SkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			package = 1F6DD8F928EC1EA000A22180 /* XCRemoteSwiftPackageReference "SkeletonView.git" */;
 			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */

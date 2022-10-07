@@ -7,15 +7,16 @@
 
 import UIKit
 import GoogleMaps
+import ParallaxHeader
 
 protocol DetailViewProtocol: AnyObject {
     
 }
 
 final class DetailController: UIViewController {
-    @IBOutlet weak var mapView: GMSMapView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak private var tableView: UITableView!
     
+    private var mapView: GMSMapView?
     private var cityData: DescriptionModel?
     var presenter: DetailPresenterProtocol?
     
@@ -48,19 +49,15 @@ private extension DetailController {
 //MARK: - Setup
 private extension DetailController {
     func setup() {
-        setupUI()
         setupMap()
         setupMarker()
         setupTable()
     }
     
-    func setupUI() {
-        navigationController?.isNavigationBarHidden = false
-    }
-    
     func setupMap() {
+        mapView = GMSMapView()
         let camera = GMSCameraPosition.camera(withLatitude: cityData?.coord.lat ?? 0, longitude: cityData?.coord.lon ?? 0, zoom: 10.0)
-        mapView.camera = camera
+        mapView?.camera = camera
     }
     
     func setupMarker() {
@@ -74,6 +71,10 @@ private extension DetailController {
     func setupTable() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.parallaxHeader.view = mapView ?? GMSMapView()
+        self.tableView.parallaxHeader.height = self.view.frame.height / 3
+        self.tableView.parallaxHeader.minimumHeight = 0
+        self.tableView.parallaxHeader.mode = .topFill
         self.tableView.register(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: "DetailCell")
     }
 }

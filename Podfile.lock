@@ -4,17 +4,21 @@ PODS:
   - GoogleMaps/Base (7.1.0)
   - GoogleMaps/Maps (7.1.0):
     - GoogleMaps/Base
+  - ParallaxHeader (3.0.0)
 
 DEPENDENCIES:
   - GoogleMaps
+  - ParallaxHeader (~> 3.0.0)
 
 SPEC REPOS:
   trunk:
     - GoogleMaps
+    - ParallaxHeader
 
 SPEC CHECKSUMS:
   GoogleMaps: bc56ffb0324e345a2d91bac1a64a920f9c8f1b20
+  ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
 
-PODFILE CHECKSUM: 0de46585bd65b2ad1c7c66d5351ff52186814dea
+PODFILE CHECKSUM: 93d683e01b606818e79fd4e52a0889f91a2b2bf3
 
 COCOAPODS: 1.10.0

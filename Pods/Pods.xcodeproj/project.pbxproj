@@ -19,13 +19,26 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		B129B9DD6D6A35DE4451894DD7C9CD58 /* Pods-CitiesTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 535A27D31928759EA70C6F7822BB7E1F /* Pods-CitiesTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B92CAD5B7A491FA16605CD9B6C84B6F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E54E854C3F20F1DB7F7D00491B806C7F /* Pods-CitiesTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B579FA01B12CBDD796BC64B616761346 /* Pods-CitiesTest-dummy.m */; };
+		2B43F9AD471FC854D2062C7FB9D2EA99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		36673132F384D15E05E88C8712900F4A /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD5AC06F51393895C7EAED50C66015 /* UIScrollView+ParallaxHeader.swift */; };
+		777DEAE0769CB23660690E6844F9E019 /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A380AD31D2942C6C20532CAF4D6CC7 /* ParallaxHeaderMode.swift */; };
+		924C58EA7C7B20A53D380589B2785C94 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E198CBED5B47F1E0C836A24380DE5297 /* ParallaxHeader.swift */; };
+		B66D7A949DE44F4B48FA68659AC816AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B84A25955BF580747114739660FB4B07 /* ParallaxHeader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5069E59E49DB1EC60DD5FC01A082955B /* ParallaxHeader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C20C6249A62B1E1458C2E8B47C6472B3 /* Pods-CitiesTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B70C7718B43FB67FFA85BA84526B3E1 /* Pods-CitiesTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB3F4DF6DC22E35E5C8F39531C03F183 /* Pods-CitiesTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1C018862E145F9F30562D14E40C618 /* Pods-CitiesTest-dummy.m */; };
+		E6D57E60275095C8D1371B257775860C /* ParallaxHeader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A090635995EEE865A03C2E206252FCBA /* ParallaxHeader-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C269387E4FB4492AD8B5E017C4173B44 /* PBXContainerItemProxy */ = {
+		98823B62EC185F28400EEE0BFDF5856D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD303FB4EEC21644FD1411682B378434;
+			remoteInfo = ParallaxHeader;
+		};
+		B24D2E72B9D49587B818B89B3526A21C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,72 +48,115 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00565601173D4727A858794DF321D74E /* Pods-CitiesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CitiesTest.release.xcconfig"; sourceTree = "<group>"; };
-		01AF48CF5646ADAB5D7324A8169AFF03 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		02D433A214CF81E045C237ABB8CB21B3 /* ParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ParallaxHeader.framework; path = ParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B19CD11F8F1C8E1831AF59EF68CD8D /* ParallaxHeader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ParallaxHeader.release.xcconfig; sourceTree = "<group>"; };
 		0EFB2B0FDDD9125207E4F942CBCD6DBA /* Pods_CitiesTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CitiesTest.framework; path = "Pods-CitiesTest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		480E74F2542B90CC455796F31F197B6B /* Pods-CitiesTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CitiesTest-resources.sh"; sourceTree = "<group>"; };
-		535A27D31928759EA70C6F7822BB7E1F /* Pods-CitiesTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CitiesTest-umbrella.h"; sourceTree = "<group>"; };
-		5A93B7ECA8FC5C94FB094265E83BE0E5 /* Pods-CitiesTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CitiesTest-acknowledgements.plist"; sourceTree = "<group>"; };
-		70ACA15A3375E89593519184A699769F /* Pods-CitiesTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CitiesTest-Info.plist"; sourceTree = "<group>"; };
+		1D88731CE8B2CC8D784F3CB31718B7FA /* Pods-CitiesTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CitiesTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		28CE308471A4CC503869D5A46A69A478 /* ParallaxHeader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ParallaxHeader-Info.plist"; sourceTree = "<group>"; };
+		2C7FA9A10F38FE72EACA242146AF6572 /* Pods-CitiesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CitiesTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4871155BFE75803EE8529A8697D2090B /* Pods-CitiesTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CitiesTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		5069E59E49DB1EC60DD5FC01A082955B /* ParallaxHeader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
+		56C44CB48B2FC0051523AE4EB54D87C3 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		5A2203D9CE2E7A5204468183C9D0E1E9 /* ParallaxHeader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ParallaxHeader.debug.xcconfig; sourceTree = "<group>"; };
+		6905F6DA84A1019B95AF5B8AFB3A0705 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		69FCAD9E22C4590C38A28C36F7B8D5FF /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		6D15DF3BFB5C050D873B0C8C281A90E8 /* Pods-CitiesTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CitiesTest-resources.sh"; sourceTree = "<group>"; };
+		6EF32B240F812A3EB459447278D42A50 /* ParallaxHeader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ParallaxHeader-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B70C7718B43FB67FFA85BA84526B3E1 /* Pods-CitiesTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CitiesTest-umbrella.h"; sourceTree = "<group>"; };
+		7C4A080ED3E37894D195D7F882D2BE53 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		83EF76382D7F931CA2EFD49CE0AB0605 /* ParallaxHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ParallaxHeader.modulemap; sourceTree = "<group>"; };
+		8987A46CA5E1546F0259E897617533E5 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
-		B579FA01B12CBDD796BC64B616761346 /* Pods-CitiesTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CitiesTest-dummy.m"; sourceTree = "<group>"; };
-		B6E7CFAF407A80962EF773D01B5CEFD2 /* Pods-CitiesTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CitiesTest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
-		CA8F91486F8999A6997535B5579DB3EF /* Pods-CitiesTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CitiesTest.modulemap"; sourceTree = "<group>"; };
-		CCAF84BDED2FB6E96E950E18E0742136 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		E2309F84CDF17FF87E66D6CDB6B517AB /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		E2F4E7C722407F81715B67A5F9EC4FAD /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		F7DD7D82060A7C90A8154C65E1BC640C /* Pods-CitiesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CitiesTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A090635995EEE865A03C2E206252FCBA /* ParallaxHeader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ParallaxHeader-dummy.m"; sourceTree = "<group>"; };
+		A1C0EFD67C13AAC28318B6A58F08426C /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		B1668D79A94FA8707254D73BB859A139 /* Pods-CitiesTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CitiesTest.modulemap"; sourceTree = "<group>"; };
+		B6A380AD31D2942C6C20532CAF4D6CC7 /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParallaxHeaderMode.swift; path = ParallaxHeader/ParallaxHeaderMode.swift; sourceTree = "<group>"; };
+		BCD9BD23CA4B4047C6BD553DD7372CAD /* Pods-CitiesTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CitiesTest-Info.plist"; sourceTree = "<group>"; };
+		BCFD5AC06F51393895C7EAED50C66015 /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ParallaxHeader.swift"; path = "ParallaxHeader/UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		E0F18A30AC4D99038AD4C597A4471C1E /* Pods-CitiesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CitiesTest.release.xcconfig"; sourceTree = "<group>"; };
+		E198CBED5B47F1E0C836A24380DE5297 /* ParallaxHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParallaxHeader.swift; path = ParallaxHeader/ParallaxHeader.swift; sourceTree = "<group>"; };
+		EE1C018862E145F9F30562D14E40C618 /* Pods-CitiesTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CitiesTest-dummy.m"; sourceTree = "<group>"; };
+		F8FF83E0254BCACF963CFACD83FDE4CC /* Pods-CitiesTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CitiesTest-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D6D68496E5F6391AFC082CEEA09636AD /* Frameworks */ = {
+		6BC32020512387E6FD30BECD6DCA0AED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B92CAD5B7A491FA16605CD9B6C84B6F8 /* Foundation.framework in Frameworks */,
+				2B43F9AD471FC854D2062C7FB9D2EA99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4267A8685CE1B44A563FC63FCB15A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66D7A949DE44F4B48FA68659AC816AA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AEA1CF3E36FF8113F6FFD7526BE5F98 /* Frameworks */ = {
+		0DAE02D39374DA29BD3EEEDA7BDFC906 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CCAF84BDED2FB6E96E950E18E0742136 /* GoogleMapsBase.framework */,
+				56C44CB48B2FC0051523AE4EB54D87C3 /* GoogleMaps.bundle */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		23258B9441300E23C80256BEEFD1F964 /* GoogleMaps */ = {
+		0F9A8A625BE2EB6E3AF496A8831B6036 /* ParallaxHeader */ = {
 			isa = PBXGroup;
 			children = (
-				5FCC553E82707BA26B1F6EDC00161B0D /* Base */,
-				387015716759109261086A8C0CA736F5 /* Maps */,
-				9601491F11C5653D98D1EB5DF2155DFE /* Support Files */,
+				E198CBED5B47F1E0C836A24380DE5297 /* ParallaxHeader.swift */,
+				B6A380AD31D2942C6C20532CAF4D6CC7 /* ParallaxHeaderMode.swift */,
+				BCFD5AC06F51393895C7EAED50C66015 /* UIScrollView+ParallaxHeader.swift */,
+				A393FD81868FB58E51E28E0410EFFC0C /* Support Files */,
+			);
+			name = ParallaxHeader;
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+		25B6A9EBABA27259DC5D8535B455DA64 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8987A46CA5E1546F0259E897617533E5 /* GoogleMaps.debug.xcconfig */,
+				6905F6DA84A1019B95AF5B8AFB3A0705 /* GoogleMaps.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		46B50507766369525E9D1C56D964DB6B /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				B68F4B05C21C2496ED6821064104AEBD /* Base */,
+				4FB49A7097C91E8B5F41C4B75240EFBB /* Maps */,
+				25B6A9EBABA27259DC5D8535B455DA64 /* Support Files */,
 			);
 			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
-		387015716759109261086A8C0CA736F5 /* Maps */ = {
+		4FB49A7097C91E8B5F41C4B75240EFBB /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				F9621E38CA93CD5E47C3F28B4F0AF3DD /* Frameworks */,
-				E48211C21EA696EBC32B31525F5FFA67 /* Resources */,
+				DB9446536D0D2EED0C6E6AB3709E57BE /* Frameworks */,
+				0DAE02D39374DA29BD3EEEDA7BDFC906 /* Resources */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
 		};
-		4EC1724AE6664B439C0F91228F6924EC /* Products */ = {
+		5034C621D725AF6784BDE023785673B3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0EFB2B0FDDD9125207E4F942CBCD6DBA /* Pods_CitiesTest.framework */,
+				46B50507766369525E9D1C56D964DB6B /* GoogleMaps */,
+				0F9A8A625BE2EB6E3AF496A8831B6036 /* ParallaxHeader */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -111,47 +167,62 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5FCC553E82707BA26B1F6EDC00161B0D /* Base */ = {
+		5D33DA0883F2011099DAE32E021F84FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AEA1CF3E36FF8113F6FFD7526BE5F98 /* Frameworks */,
+				02D433A214CF81E045C237ABB8CB21B3 /* ParallaxHeader.framework */,
+				0EFB2B0FDDD9125207E4F942CBCD6DBA /* Pods_CitiesTest.framework */,
 			);
-			name = Base;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		704F4C477ED9B69A9AD184267534E698 /* Pods-CitiesTest */ = {
+		A393FD81868FB58E51E28E0410EFFC0C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA8F91486F8999A6997535B5579DB3EF /* Pods-CitiesTest.modulemap */,
-				B6E7CFAF407A80962EF773D01B5CEFD2 /* Pods-CitiesTest-acknowledgements.markdown */,
-				5A93B7ECA8FC5C94FB094265E83BE0E5 /* Pods-CitiesTest-acknowledgements.plist */,
-				B579FA01B12CBDD796BC64B616761346 /* Pods-CitiesTest-dummy.m */,
-				70ACA15A3375E89593519184A699769F /* Pods-CitiesTest-Info.plist */,
-				480E74F2542B90CC455796F31F197B6B /* Pods-CitiesTest-resources.sh */,
-				535A27D31928759EA70C6F7822BB7E1F /* Pods-CitiesTest-umbrella.h */,
-				F7DD7D82060A7C90A8154C65E1BC640C /* Pods-CitiesTest.debug.xcconfig */,
-				00565601173D4727A858794DF321D74E /* Pods-CitiesTest.release.xcconfig */,
+				83EF76382D7F931CA2EFD49CE0AB0605 /* ParallaxHeader.modulemap */,
+				A090635995EEE865A03C2E206252FCBA /* ParallaxHeader-dummy.m */,
+				28CE308471A4CC503869D5A46A69A478 /* ParallaxHeader-Info.plist */,
+				6EF32B240F812A3EB459447278D42A50 /* ParallaxHeader-prefix.pch */,
+				5069E59E49DB1EC60DD5FC01A082955B /* ParallaxHeader-umbrella.h */,
+				5A2203D9CE2E7A5204468183C9D0E1E9 /* ParallaxHeader.debug.xcconfig */,
+				03B19CD11F8F1C8E1831AF59EF68CD8D /* ParallaxHeader.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ParallaxHeader";
+			sourceTree = "<group>";
+		};
+		A40EBF4AC05A8A202CB28A6353DFED40 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA2C1BF26F366D3EEF9F0A2755ABF0E6 /* Pods-CitiesTest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AA2C1BF26F366D3EEF9F0A2755ABF0E6 /* Pods-CitiesTest */ = {
+			isa = PBXGroup;
+			children = (
+				B1668D79A94FA8707254D73BB859A139 /* Pods-CitiesTest.modulemap */,
+				1D88731CE8B2CC8D784F3CB31718B7FA /* Pods-CitiesTest-acknowledgements.markdown */,
+				4871155BFE75803EE8529A8697D2090B /* Pods-CitiesTest-acknowledgements.plist */,
+				EE1C018862E145F9F30562D14E40C618 /* Pods-CitiesTest-dummy.m */,
+				F8FF83E0254BCACF963CFACD83FDE4CC /* Pods-CitiesTest-frameworks.sh */,
+				BCD9BD23CA4B4047C6BD553DD7372CAD /* Pods-CitiesTest-Info.plist */,
+				6D15DF3BFB5C050D873B0C8C281A90E8 /* Pods-CitiesTest-resources.sh */,
+				7B70C7718B43FB67FFA85BA84526B3E1 /* Pods-CitiesTest-umbrella.h */,
+				2C7FA9A10F38FE72EACA242146AF6572 /* Pods-CitiesTest.debug.xcconfig */,
+				E0F18A30AC4D99038AD4C597A4471C1E /* Pods-CitiesTest.release.xcconfig */,
 			);
 			name = "Pods-CitiesTest";
 			path = "Target Support Files/Pods-CitiesTest";
 			sourceTree = "<group>";
 		};
-		7E9A238969AF4646352594FA648025B1 /* Targets Support Files */ = {
+		B68F4B05C21C2496ED6821064104AEBD /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				704F4C477ED9B69A9AD184267534E698 /* Pods-CitiesTest */,
+				E307D71E473073F2D85B00F6F207D0DD /* Frameworks */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9601491F11C5653D98D1EB5DF2155DFE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */,
-				C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleMaps";
+			name = Base;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -159,9 +230,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DF3634087891871FA7B65CC4A8E6DB71 /* Pods */,
-				4EC1724AE6664B439C0F91228F6924EC /* Products */,
-				7E9A238969AF4646352594FA648025B1 /* Targets Support Files */,
+				5034C621D725AF6784BDE023785673B3 /* Pods */,
+				5D33DA0883F2011099DAE32E021F84FF /* Products */,
+				A40EBF4AC05A8A202CB28A6353DFED40 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,27 +244,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF3634087891871FA7B65CC4A8E6DB71 /* Pods */ = {
+		DB9446536D0D2EED0C6E6AB3709E57BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23258B9441300E23C80256BEEFD1F964 /* GoogleMaps */,
+				69FCAD9E22C4590C38A28C36F7B8D5FF /* GoogleMaps.framework */,
+				7C4A080ED3E37894D195D7F882D2BE53 /* GoogleMapsCore.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E48211C21EA696EBC32B31525F5FFA67 /* Resources */ = {
+		E307D71E473073F2D85B00F6F207D0DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E2309F84CDF17FF87E66D6CDB6B517AB /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		F9621E38CA93CD5E47C3F28B4F0AF3DD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				01AF48CF5646ADAB5D7324A8169AFF03 /* GoogleMaps.framework */,
-				E2F4E7C722407F81715B67A5F9EC4FAD /* GoogleMapsCore.framework */,
+				A1C0EFD67C13AAC28318B6A58F08426C /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,11 +264,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C24F470B4E02318B1B4AFB6A180C62F /* Headers */ = {
+		19F4BFF1CE0A01DF3538F81B3187E536 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B129B9DD6D6A35DE4451894DD7C9CD58 /* Pods-CitiesTest-umbrella.h in Headers */,
+				B84A25955BF580747114739660FB4B07 /* ParallaxHeader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB141CC94487FE3534BB2BC9D6BAD0BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20C6249A62B1E1458C2E8B47C6472B3 /* Pods-CitiesTest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,21 +285,40 @@
 /* Begin PBXNativeTarget section */
 		A7F1C0F9821F2DE5EC82229FC258884D /* Pods-CitiesTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E4BC76FC1A91B76B9CCCA2213C62DE6 /* Build configuration list for PBXNativeTarget "Pods-CitiesTest" */;
+			buildConfigurationList = 57AABFC26D241D0088B993614D3B7530 /* Build configuration list for PBXNativeTarget "Pods-CitiesTest" */;
 			buildPhases = (
-				0C24F470B4E02318B1B4AFB6A180C62F /* Headers */,
-				66EF0FCB69EAB8C7F0FAFE41E89FDE42 /* Sources */,
-				D6D68496E5F6391AFC082CEEA09636AD /* Frameworks */,
-				F6B6BF68194D4D987CB360A1185B4F23 /* Resources */,
+				EB141CC94487FE3534BB2BC9D6BAD0BA /* Headers */,
+				3FF8D375E019BB6AD0F829428AAC411E /* Sources */,
+				A4267A8685CE1B44A563FC63FCB15A40 /* Frameworks */,
+				BE6BBB73C3E1D7269C065E95FBC1C561 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD66E16E130327E2DC5C36D888188B09 /* PBXTargetDependency */,
+				AD24CCC728EA8E0A04BE8E4A3A2C52B1 /* PBXTargetDependency */,
+				A407E27E0E8274FB4C971632D73E6447 /* PBXTargetDependency */,
 			);
 			name = "Pods-CitiesTest";
 			productName = "Pods-CitiesTest";
 			productReference = 0EFB2B0FDDD9125207E4F942CBCD6DBA /* Pods_CitiesTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD303FB4EEC21644FD1411682B378434 /* ParallaxHeader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96452FF5B4E114F07EA0885F9D8D5E48 /* Build configuration list for PBXNativeTarget "ParallaxHeader" */;
+			buildPhases = (
+				19F4BFF1CE0A01DF3538F81B3187E536 /* Headers */,
+				8524866C9624C38FDB139929F23D1A65 /* Sources */,
+				6BC32020512387E6FD30BECD6DCA0AED /* Frameworks */,
+				E0184A1B8D6DCFDEF8EE3D2B6AF1876A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParallaxHeader;
+			productName = ParallaxHeader;
+			productReference = 02D433A214CF81E045C237ABB8CB21B3 /* ParallaxHeader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -249,18 +339,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 4EC1724AE6664B439C0F91228F6924EC /* Products */;
+			productRefGroup = 5D33DA0883F2011099DAE32E021F84FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				AD303FB4EEC21644FD1411682B378434 /* ParallaxHeader */,
 				A7F1C0F9821F2DE5EC82229FC258884D /* Pods-CitiesTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F6B6BF68194D4D987CB360A1185B4F23 /* Resources */ = {
+		BE6BBB73C3E1D7269C065E95FBC1C561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0184A1B8D6DCFDEF8EE3D2B6AF1876A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,29 +368,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		66EF0FCB69EAB8C7F0FAFE41E89FDE42 /* Sources */ = {
+		3FF8D375E019BB6AD0F829428AAC411E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E54E854C3F20F1DB7F7D00491B806C7F /* Pods-CitiesTest-dummy.m in Sources */,
+				DB3F4DF6DC22E35E5C8F39531C03F183 /* Pods-CitiesTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8524866C9624C38FDB139929F23D1A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924C58EA7C7B20A53D380589B2785C94 /* ParallaxHeader.swift in Sources */,
+				E6D57E60275095C8D1371B257775860C /* ParallaxHeader-dummy.m in Sources */,
+				777DEAE0769CB23660690E6844F9E019 /* ParallaxHeaderMode.swift in Sources */,
+				36673132F384D15E05E88C8712900F4A /* UIScrollView+ParallaxHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BD66E16E130327E2DC5C36D888188B09 /* PBXTargetDependency */ = {
+		A407E27E0E8274FB4C971632D73E6447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ParallaxHeader;
+			target = AD303FB4EEC21644FD1411682B378434 /* ParallaxHeader */;
+			targetProxy = 98823B62EC185F28400EEE0BFDF5856D /* PBXContainerItemProxy */;
+		};
+		AD24CCC728EA8E0A04BE8E4A3A2C52B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = C269387E4FB4492AD8B5E017C4173B44 /* PBXContainerItemProxy */;
+			targetProxy = B24D2E72B9D49587B818B89B3526A21C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0657E6247C7E8744275AACEBAB511440 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */;
+			baseConfigurationReference = 8987A46CA5E1546F0259E897617533E5 /* GoogleMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -373,6 +488,43 @@
 			};
 			name = Debug;
 		};
+		74018946A3DCF5161768B76299CB84A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C7FA9A10F38FE72EACA242146AF6572 /* Pods-CitiesTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CitiesTest/Pods-CitiesTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CitiesTest/Pods-CitiesTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,9 +587,44 @@
 			};
 			name = Release;
 		};
-		E63AF7958BFFDE2E2495E936ADC860A6 /* Debug */ = {
+		9371C06E9861A63F13BA706BF873F18D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7DD7D82060A7C90A8154C65E1BC640C /* Pods-CitiesTest.debug.xcconfig */;
+			baseConfigurationReference = 03B19CD11F8F1C8E1831AF59EF68CD8D /* ParallaxHeader.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ParallaxHeader/ParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ParallaxHeader/ParallaxHeader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ParallaxHeader/ParallaxHeader.modulemap";
+				PRODUCT_MODULE_NAME = ParallaxHeader;
+				PRODUCT_NAME = ParallaxHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D170B533C5F10D38FACF4CF2F335F4B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0F18A30AC4D99038AD4C597A4471C1E /* Pods-CitiesTest.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -467,6 +654,41 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E567FEAA055E0DEDE9ED290BE13EF180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A2203D9CE2E7A5204468183C9D0E1E9 /* ParallaxHeader.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ParallaxHeader/ParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ParallaxHeader/ParallaxHeader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ParallaxHeader/ParallaxHeader.modulemap";
+				PRODUCT_MODULE_NAME = ParallaxHeader;
+				PRODUCT_NAME = ParallaxHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -474,7 +696,7 @@
 		};
 		EC690621027EA58B5D021A1004DD63B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */;
+			baseConfigurationReference = 6905F6DA84A1019B95AF5B8AFB3A0705 /* GoogleMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,56 +712,9 @@
 			};
 			name = Release;
 		};
-		FD2EA29E1F2C8C13362AB5DD01D794EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00565601173D4727A858794DF321D74E /* Pods-CitiesTest.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CitiesTest/Pods-CitiesTest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CitiesTest/Pods-CitiesTest.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E4BC76FC1A91B76B9CCCA2213C62DE6 /* Build configuration list for PBXNativeTarget "Pods-CitiesTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E63AF7958BFFDE2E2495E936ADC860A6 /* Debug */,
-				FD2EA29E1F2C8C13362AB5DD01D794EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -554,6 +729,24 @@
 			buildConfigurations = (
 				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
 				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57AABFC26D241D0088B993614D3B7530 /* Build configuration list for PBXNativeTarget "Pods-CitiesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74018946A3DCF5161768B76299CB84A2 /* Debug */,
+				D170B533C5F10D38FACF4CF2F335F4B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96452FF5B4E114F07EA0885F9D8D5E48 /* Build configuration list for PBXNativeTarget "ParallaxHeader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E567FEAA055E0DEDE9ED290BE13EF180 /* Debug */,
+				9371C06E9861A63F13BA706BF873F18D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

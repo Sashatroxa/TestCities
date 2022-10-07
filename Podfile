@@ -6,5 +6,6 @@ target 'CitiesTest' do
   use_frameworks!
 
   pod 'GoogleMaps'
+  pod 'ParallaxHeader', '~> 3.0.0'
 
 end

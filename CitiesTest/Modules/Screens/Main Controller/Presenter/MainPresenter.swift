@@ -52,7 +52,7 @@ extension MainPresenter: MainPresenterProtocol {
                 detailController.presenter = presenter
                 completion?()
                 
-                self?.view?.presentController(controller: detailController)
+                self?.view?.pushToController(controller: detailController)
             case .failure(let error):
                 print(error)
             }
